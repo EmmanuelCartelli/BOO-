@@ -5,20 +5,7 @@ body{
     display: grid;
     grid-template-columns: repeat(35, 1fr);
     grid-template-rows: repeat(24, 1fr);
-}
-
-/* R5 C16-21*/
-
-.row5column16, .row5column17, .row5column18, .row5column19, .row5column20, .row5column21{
-    background: black;
-}
-
-/* R6 C22-23*/
-
-.row6column22, .row6column23{
-    background: black;
-}
-/* R6 C14-15*/
-.row6column14, .row6column15{
-    background: black;
+    width: 90rem;
+    margin: auto;
+    max-width: 100%;
 }
