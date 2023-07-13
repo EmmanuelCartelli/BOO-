@@ -12,17 +12,9 @@ function main(){
   }
   let first = document.querySelectorAll(".element");
   console.log(first);
-  let width = document.querySelector("body").offsetWidth / 35;
-  first.forEach(element =>{
-    element.setAttribute("style", `height: ${width}px`);
-  })
   addClass();
   colorizedInBlack();
   window.addEventListener("resize", function(){
-    let width = document.querySelector("body").offsetWidth / 35;
-    first.forEach(element =>{
-      element.setAttribute("style", `height: ${width}px`);
-    })
     colorizedInBlack();
   })
 }
@@ -56,7 +48,6 @@ function colorizedInBlack(){
     for(j of allElements){
         if(arrayBlack.includes(parseInt(j.classList[1]))){
             j.setAttribute("style", "background-color: black");
-            console.log(j.classList[1]);
         }
         if(arrayGrey.includes(parseInt(j.classList[1]))){
             j.setAttribute("style", "background-color: lightgrey");
